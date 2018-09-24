@@ -1,0 +1,48 @@
+:icons: font
+
+:toc: macro
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+:icons: font
+:sectnums:
+:sectanchors:
+
+== General information
+This is Ailo Apocalypse v6.6.6 game.
+
+After the nuclear war, a strange and deadly virus called ailo has infected the planet. Living creatures
+are becoming 'ailos' that spread their ailoness by a bite. The world consists of an n x n grid on which ailos and creatures live.
+
+== Prerequisites
+* JDK 10
+* Maven
+
+== Running application
+
+=== With input file parameter
+[source]
+-----------------
+mvn compile exec:java -Dexec.mainClass=com.cranberrysoft.apocalypse.GameRunner -Dexec.args="D:\interview\ailo-apocalypse\src\main\resources\input.txt"
+-----------------
+
+=== With default input file
+[source]
+-----------------
+mvn compile exec:java -Dexec.mainClass=com.cranberrysoft.apocalypse.GameRunner
+-----------------
+
+== Running Unit Tests
+[source]
+-----------------
+mvn test
+-----------------
+
+[dedication]
+== Credits
+CAUTION: Mariusz Dubielecki dubielecki.mariusz@gmail.com
